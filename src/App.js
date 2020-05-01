@@ -81,7 +81,7 @@ class CoursesTaken extends Component {
   // posts the input courses to another apis
   sendAPI(data) {
     fetch('https://blooming-island-92131.herokuapp.com/api/user_info', {
-      // mode: 'no-cors',
+      mode: 'no-cors',
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(data)
@@ -271,7 +271,7 @@ class SemestersTaken extends Component {
     const sem_num = [].concat(this.state.value)
     console.log(JSON.stringify(sem_num));
     fetch('https://blooming-island-92131.herokuapp.com/api/semesters_info', {
-      // mode: 'no-cors',
+      mode: 'no-cors',
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(sem_num)
