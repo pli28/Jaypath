@@ -39,7 +39,7 @@ class Final extends Component {
             .then(res => res.json())
             .then(res => this.setState({schedule: res}))
             .then(() => this.setState({ loading: false }))
-            .then(res => console.log(res));
+            .then(res => console.log(res))
             .catch(err => console.log(err));
     }
 

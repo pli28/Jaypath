@@ -32,7 +32,7 @@ class CoursesPrioritized extends Component {
       console.log("posting to api");
       console.log(JSON.stringify(data));
       fetch('https://blooming-island-92131.herokuapp.com/api/courses_prioritized', {
-        mode: 'no-cors',
+        // mode: 'no-cors',
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
