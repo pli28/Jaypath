@@ -36,7 +36,7 @@ class Final extends Component {
         this.setState({loading: true})
         console.log(''.concat('https://blooming-island-92131.herokuapp.com/api', this.props.valueFromParent,'/courses',this.props.numSchedule));
         fetch(''.concat('https://blooming-island-92131.herokuapp.com/api', this.props.valueFromParent,'/courses',this.props.numSchedule))
-            .then(res => res.json())
+            // .then(res => res.json())
             .then(res => this.setState({schedule: res}))
             .then(() => this.setState({ loading: false }))
             .then(res => console.log(res))
